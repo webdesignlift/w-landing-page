@@ -1,8 +1,9 @@
 # w-landing-page
-A Basic Responsive Product Landing Page
+A Basic Responsive Product Landing Page, 
+## [live demo](https://webdesignlift.github.io/w-landing-page/) | [codepen](https://codepen.io/windo/full/gjyaMN)
 
-[Demo](https://webdesignlift.github.io/w-landing-page/)
+![basic-landing-page-screenshot](https://w-digital.co/assets/img/basic-landing-page.png)
 
-view on [codepen](https://codepen.io/windo/full/gjyaMN)
 
-maintainer [Windo](https://w-digital.co)
+Maintainer [Windo](https://w-digital.co) | [@hantumobil](https://github.com/hantumobil/)
+
