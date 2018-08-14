@@ -1,0 +1,189 @@
+/* Layout */
+
+#container {
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 19% 1fr 19%;
+    grid-tempate-areas: "header" "main" "footer"
+}
+
+#header {
+    grid-column: 1/4;
+}
+
+#main {
+    grid-column: 1/4;
+}
+
+#footer {
+    grid-column: 1/4;
+}
+
+/* internal layout */
+
+#header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header-img {
+    margin: 1.618rem 1.6rem 0 1.6rem;
+}
+
+nav {
+    margin-right: 1.618rem;
+}
+
+/* navigation layout */
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.nav-link {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+/* Style / Theme */
+
+.container {
+    font-family: "Rubik", sans-serif;
+    background: #ebebeb;
+}
+
+.logo-container {
+    width: 100px;
+}
+
+.header-logo {
+    width: 148.5px;
+    height: auto;
+    max-width: 50%;
+    display: block;
+}
+
+.nav ul {
+    list-style-type: none;
+    color: black;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    padding: .618em;
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: black;
+}
+
+.nav-link>span {
+    font-size: 1rem;
+    font-weight: 200;
+    opacity: .6
+}
+
+.nav-link:hover {
+    text-decoration: none;
+    color: inherit;
+    background-color: rgba(255, 255, 255, .618);
+}
+
+main#main,
+header#header {
+    z-index: 1;
+}
+
+section {
+    margin: 3em 0;
+}
+
+/* Section Hero */
+
+#section-hero {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.hero-word {
+    flex-basis: 38%;
+    flex-grow: 1;
+    padding: 1em;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.hero-image {
+    flex-basis: 62%;
+    flex-grow: 1;
+    padding: 1em;
+}
+
+.hero-word>.form {
+    display: flex;
+}
+
+.video-container {
+    display: block;
+}
+
+.video-container>#video {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, .16);
+}
+
+.bg-top {
+    position: absolute;
+    display: block;
+    top: -60%;
+    right: -50%;
+    z-index: -100;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, #D32FB3, #911D7B);
+    border-radius: 10vmax;
+    transform: rotate(25deg);
+    opacity: .83;
+}
+
+#footer {
+    margin: 3em 0;
+}
+
+.footer-text {
+    display: flex;
+    justify-content: center;
+    font-size: .83em;
+    opacity: .8;
+    font-style: italic;
+}
+
+@media (max-width: 900px) {
+    #header {
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+    .nav-link {
+        align-items: center;
+    }
+    .hero-word {
+        justify-content: center;
+    }
+    .hero-word .title,
+    .hero-word .subtitle {
+        text-align: center;
+    }
+}

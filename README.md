@@ -1,2 +1,5 @@
 # w-landing-page
-Product Landing Page
+A Basic Responsive Product Landing Page
+
+view on (codepen)[https://codepen.io/windo/full/gjyaMN]
+
